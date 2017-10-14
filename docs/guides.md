@@ -1,0 +1,5 @@
+* [微信小程序官方文档](https://mp.weixin.qq.com/debug/wxadoc/dev/)
+* [Express 文档](http://expressjs.com)
+* [Sequelize 文档](http://docs.sequelizejs.com)
+* [AdminLTE 文档](https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html)
+* [RESTful API 设计指南](http://www.ruanyifeng.com/blog/2014/05/restful_api.html)
