@@ -1,0 +1,82 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">新生信息查询</view>
+  </view>
+  <!-- 查询结果 -->
+  <view class="page__bd">
+    <!-- <block wx:for="infos" wx:key="unique"> -->
+    <view class="weui-form-preview">
+      <view class="weui-form-preview__bd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">学号</view>
+          <view class="weui-form-preview__value">{{infos.sdutid}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">班级</view>
+          <view class="weui-form-preview__value">{{infos.class_name}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">校区</view>
+          <view class="weui-form-preview__value">{{infos.campus}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">专业名称</view>
+          <view class="weui-form-preview__value">{{infos.domain}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">录取层次</view>
+          <view class="weui-form-preview__value">{{infos.level}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">学制</view>
+          <view class="weui-form-preview__value">{{infos.school_len}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">省份</view>
+          <view class="weui-form-preview__value">{{infos.province}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">考试号</view>
+          <view class="weui-form-preview__value">{{infos.exam_num}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">姓名</view>
+          <view class="weui-form-preview__value">{{infos.sdut_name}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">性别</view>
+          <view class="weui-form-preview__value">{{infos.gender}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">民族</view>
+          <view class="weui-form-preview__value">{{infos.nation}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">报到地点</view>
+          <view class="weui-form-preview__value">{{infos.report_location}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">学院名称</view>
+          <view class="weui-form-preview__value">{{infos.college}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">全班人数</view>
+          <view class="weui-form-preview__value">{{infos.all}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">男女比例</view>
+          <view class="weui-form-preview__value">{{infos.ratio}}</view>
+        </view>
+      </view>
+    </view>
+    <canvas canvas-id="pieCanvas" class="canvas" style="height:300px" bindtouchstart="touchHandler"></canvas>
+    <!-- </block> -->
+  </view>
+  <view class="weui-footer">
+    <view class="weui-footer__links">
+      <navigator url="/pages/user/about/about" class="weui-footer__link">青春在线</navigator>
+      <navigator url="/pages/core/index/index" class="weui-footer__link">学生服务</navigator>
+    </view>
+    <view class="weui-footer__text">Copyright © 2017 youthol.cn</view>
+  </view>
+</view>

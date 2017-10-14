@@ -1,0 +1,114 @@
+page {
+  background: #f5f7f9;
+}
+
+.boiling {
+  width: 750rpx;
+  height: 100%;
+  min-height: 100%;
+  font-size: 14px;
+}
+
+/* 沸点封面 */
+
+.subimg {
+  width: 750rpx;
+  height: 300rpx;
+  opacity: 0.618;
+  background: #fff;
+}
+
+/* 沸点内容 */
+
+.detail {
+  display: flex;
+  flex-flow: column wrap;
+  width: 750rpx;
+  padding: 0 25rpx;
+  background: #fff;
+}
+
+.cnt-title {
+  margin: 20rpx 0;
+  font-size: 1.36em;
+  font-weight: 700;
+  line-height: 1.2em;
+  color: #464c5b;
+}
+
+.cnt-subscribe {
+  font-size: 0.96em;
+  color: #9ea7b4;
+}
+
+.cnt-date {
+  margin: 20rpx 0;
+  color: #c3cbd6;
+  font-size: 0.81em;
+  line-height: 1.36em;
+  text-align: right;
+}
+
+/* 评论 */
+
+.comments {
+  width: 750rpx;
+  margin: 20rpx 0;
+  border-top: 1px solid #e3e8ee;
+  background: #fff;
+}
+
+.cmt-title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 750rpx;
+  padding: 20rpx;
+  line-height: 2em;
+  color: #9ea7b4;
+}
+
+.cmt-title .tab-btn {
+  display: flex;
+  flex-flow: row nowrap;
+  /*width: 200rpx;*/
+  height: 2em;
+}
+
+.tab-btn button {
+  font-size: 14px;
+  line-height: 2em;
+  background-color: inherit;
+}
+
+.tab-btn button::after {
+  border: none;
+}
+
+.com-lists {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 750rpx;
+  /* padding: 0 20rpx; */
+}
+
+.cmt-item {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  border-top: 1px solid #e3e8ee;
+  padding: 10rpx 0;
+}
+
+.cmt-item-nickname {
+  margin-left: 1em;
+  color: #464c5b;
+  font-weight: 700;
+  line-height: 64rpx;
+}
+
+.cmt-item-content {
+  margin-left: 2em;
+  padding: 10rpx 0;
+  color: #657180;
+}

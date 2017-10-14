@@ -1,0 +1,43 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">绩点查询</view>
+  </view>
+  <!-- 查询结果 -->
+  <view class="page__bd">
+    <view class="weui-form-preview">
+      <view class="weui-form-preview__bd">
+        <block wx:for="{{jidian}}" wx:key="unique">
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">{{item.attr}}</view>
+            <view class="weui-form-preview__value">{{item.value}}</view>
+          </view>
+        </block>
+      </view>
+      <view class="weui-form-preview__ft">
+        <button class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active" bindtap="showMore">查看成绩</button>
+      </view>
+    </view>
+    <!-- 单科 -->
+    <view class="rank_bd table" wx:if="{{showMore}}">
+      <view class="tr">
+        <view class="th w3">课程名称</view>
+        <view class="th">学分</view>
+        <view class="th">成绩</view>
+      </view>
+      <block wx:for="{{chengji}}" wx:key="unique">
+        <view class="tr">
+          <view class="td w3">{{item.mc}}</view>
+          <view class="td">{{item.xf}}</view>
+          <view class="td">{{item.cj}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="weui-footer">
+    <view class="weui-footer__links">
+      <navigator url="/pages/user/about/about" class="weui-footer__link">青春在线</navigator>
+      <navigator url="/pages/core/index/index" class="weui-footer__link">学生服务</navigator>
+    </view>
+    <view class="weui-footer__text">Copyright © 2017 youthol.cn</view>
+  </view>
+</view>

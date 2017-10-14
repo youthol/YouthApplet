@@ -1,0 +1,129 @@
+.page {
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+  background: #f5f7f9;
+  font-size: 14px;
+}
+
+/* 功能 */
+
+.page__hd {
+  padding: 0;
+  /* margin-bottom: 20rpx; */
+}
+
+.page__bd {
+  padding-bottom: 0;
+}
+
+.core {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  background: #fff;
+  border-bottom: 1rpx solid #e5e5e5;
+  padding: 20rpx 0;
+  overflow: hidden;
+  background: #008aff;
+}
+
+.core-item {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 25%;
+  /*height: 170rpx;*/
+}
+
+.core-item-icon {
+  display: block;
+  width: 85rpx;
+  height: 85rpx;
+  margin: 15rpx auto;
+}
+
+.core-item-name {
+  display: block;
+  margin: 5rpx;
+  font-size: 0.89em;
+  color: #fff;
+}
+
+/* 轮播 */
+
+.swiper-container {
+  position: relative;
+}
+
+.swiper-container .swiper {
+  height: 300rpx;
+}
+
+.swiper-container .swiper .img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container .dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-container .dots .dot {
+  margin: 0 8rpx;
+  width: 14rpx;
+  height: 14rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  transition: all 0.6s;
+}
+
+.swiper-container .dots .dot.active {
+  width: 24rpx;
+  background: #f80;
+}
+
+.onePic {
+  width: 750rpx;
+  height: 375rpx;
+  position: relative;
+}
+
+.swp_img {
+  width: 100%;
+  height: 100%;
+}
+
+.swp_font {
+  font-size: 100px;
+  position: absolute;
+  top: 125px;
+}
+
+.swp_date {
+  position: absolute;
+  bottom: -40px;
+  right: 40px;
+}
+
+.quote {
+  margin-top: 64px;
+  padding:0 64rpx;
+}
+
+.yinhao {
+  font-size: 50px;
+  color: #008aff;
+  line-height: 1em;
+}
+
+.author {
+  text-align: right;
+}

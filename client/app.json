@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/discover/index/index",
+    "pages/user/index/index",
+    "pages/user/about/about",
+    "pages/user/feedback/feedback",
+    "pages/user/bind/bind",
+    "pages/user/info/info",
+    "pages/core/index/index",
+    "pages/core/score/input/input",
+    "pages/core/score/result/result",
+    "pages/core/fresh/input/input",
+    "pages/core/fresh/result/result",
+    "pages/core/dorm/input/input",
+    "pages/core/dorm/result/result",
+    "pages/core/boiling/index/index",
+    "pages/core/boiling/detail/detail",
+    "pages/core/boiling/comment/comment",
+    "pages/core/calendar/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "青春在线",
+    "navigationBarBackgroundColor": "#008aff",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#008aff",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#888",
+    "selectedColor": "#008aff",
+    "backgroundColor": "#f5f5f7",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "images/tab/home.png",
+        "selectedIconPath": "images/tab/home_fill.png"
+      },
+      {
+        "pagePath": "pages/discover/index/index",
+        "text": "发现",
+        "iconPath": "images/tab/social.png",
+        "selectedIconPath": "images/tab/social_fill.png"
+      },
+      {
+        "pagePath": "pages/user/index/index",
+        "text": "我的",
+        "iconPath": "images/tab/like.png",
+        "selectedIconPath": "images/tab/like_fill.png"
+      }
+    ]
+  },
+  "debug": false
+}

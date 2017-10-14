@@ -1,0 +1,30 @@
+<view class="page">
+  <view class="calendar">
+    <!-- handle -->
+    <view class="handle">
+      <image class="arraw" src="/images/core/prev.png" bindtap="handleCalendar" data-handle="prev"></image>
+      <view class="date-area">{{cur_year || "--"}} 年 {{cur_month || "--"}} 月</view>
+      <image class="arraw" src="/images/core/next.png" bindtap="handleCalendar" data-handle="next"></image>
+    </view>
+    <!-- weeks -->
+    <view class="weeks">
+      <view class="week" wx:for="{{weeks_ch}}" wx:key="{{index}}" data-idx="{{index}}">{{item}}</view>
+    </view>
+    <!-- days -->
+    <view class="days">
+      <view wx:if="{{hasEmptyGrid}}" class="grid-box" wx:for="{{empytGrids}}" wx:key="{{index}}" data-idx="{{index}}">
+      </view>
+      <view class="grid-box" wx:for="{{days}}" wx:key="{{index}}" data-idx="{{index}}">
+        <view class="{{index >= 5 && index <= 13 ? 'day-select' : ''}} day">{{item}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="events">
+    <view class="ent_desc">山东理工大学校历</view>
+    <view class="ent_list">
+      <block wx:for="{{schedule}}" wx:key="unique">
+        <view class="ent_item"><text>{{item.date}}</text>{{item.content}}</view>
+      </block>
+    </view>
+  </view>
+</view>

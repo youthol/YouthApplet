@@ -1,0 +1,25 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">调查问卷</view>
+  </view>
+  <!-- 查询表单 -->
+  <view class="page__bd">
+    <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">信息输入有误</view>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class="weui-cells__title">输入信息</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">姓名</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" name="xm" placeholder="请输入姓名" />
+          </view>
+        </view>
+      </view>
+      <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" formType="submit">开始问卷</button>
+      </view>
+    </form>
+  </view>
+</view>

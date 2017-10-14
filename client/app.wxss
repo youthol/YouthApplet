@@ -1,0 +1,72 @@
+@import 'utils/weui.wxss';
+
+/* 基础样式 */
+
+view, scroll-view, swiper, swiper-item, icon, text, progress, button,
+checkbox-group, checkbox, form, input, label, picker, radio-group, radio, slider,
+switch, action-sheet, action-sheet-item, action-sheet-cancel, modal, toast,
+loading, navigator, audio, image, video, map, canvas {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+page {
+  width: 750rpx;
+  height: 100%;
+  min-height: 100%;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  background: #f8f8f9;
+  font-size: 14px;
+}
+
+.page__hd {
+  margin: 0;
+  padding: 0;
+}
+
+.page__bd {
+  padding-bottom: 40px;
+}
+
+.page__title {
+  padding: 64rpx;
+  color: #008aff;
+  text-align: center;
+  font-size: 48rpx;
+  font-weight: 700;
+}
+
+.page__desc {
+  margin-top: 5px;
+  color: #888;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* 自定义按钮颜色 */
+
+button[type="primary"] {
+  background-color: #008aff;
+}
+
+.button-hover[type="primary"] {
+  background-color: #0c78fc;
+  opacity: 0.7;
+}
+
+/* 公用自定义组件 */
+
+.addition {
+  position: fixed;
+  bottom: 64rpx;
+  right: 20rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.add_icon {
+  width: 100%;
+  height: 100%;
+  opacity: 0.618;
+}

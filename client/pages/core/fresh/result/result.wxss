@@ -1,0 +1,32 @@
+/* 表格 */
+
+.table {
+  position: relative;
+  border-right: 0;
+  border-bottom: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.th, .td {
+  padding: 20rpx;
+  border-bottom: 1px solid #d7dde4;
+  text-align: center;
+  line-height: 100%;
+  width: 100%;
+}
+
+.th {
+  font-weight: 600;
+  background-color: #f5f7f9;
+}
+
+.w3 {
+  width: 360%;
+}

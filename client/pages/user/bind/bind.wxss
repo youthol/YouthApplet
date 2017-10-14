@@ -1,0 +1,31 @@
+page {
+  font-size: 14px;
+}
+
+.page__title {
+  padding: 64rpx 0;
+}
+
+.weui-article__h3 {
+  position: relative;
+  font-weight: 600;
+}
+
+.weui-article__p {
+  margin: 16rpx;
+  margin-bottom: 2em;
+}
+
+.weui-btn-area {
+  margin-top: 0;
+}
+
+.weui-article__h3::after {
+  content: '';
+  position: absolute;
+  top: 8rpx;
+  left: -20rpx;
+  width: 10rpx;
+  height: 1em;
+  background: #9ea7b4;
+}

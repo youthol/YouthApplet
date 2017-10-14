@@ -1,0 +1,59 @@
+.page {
+  position: relative;
+  width: 750rpx;
+  height: 100%;
+  min-height: 100%;
+  font-size: 14px;
+}
+
+/* 活动列表 */
+
+.act_lists {
+  width: 750rpx;
+}
+
+.act_item {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 710rpx;
+  margin: 20rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  background: #fff;
+  box-shadow:0 10rpx 10rpx #eee;
+}
+
+.act_img {
+  width: 100%;
+  height: 375rpx;
+  margin-bottom: 10rpx;
+}
+
+.act_info {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 3em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.act_sign {
+  display: inline-block;
+  padding: 0 10rpx;
+}
+
+.huodong {
+  border: 1px solid #99f;
+}
+
+.toutiao {
+  border: 1px solid #f69;
+}
+.act_title {
+  display: inline-block;
+  padding: 0 10rpx;
+}

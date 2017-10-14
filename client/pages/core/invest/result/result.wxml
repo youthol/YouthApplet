@@ -1,0 +1,36 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">调查问卷</view>
+  </view>
+  <view class="page__bd">
+    <!-- 问卷内容 -->
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <block wx:for="{{questions}}" wx:key="unique">
+        <view class="weui-cells__title">{{item.question}}</view>
+        <view class="weui-cells weui-cells_after-title">
+          <radio-group data-num="{{item.num}}" bindchange="checkboxChange">
+            <block wx:for="{{item.answer}}" wx:key="unique">
+              <label class="weui-cell weui-check__label">
+                <radio class="weui-check" value="{{index}}"/>
+                <view class="weui-cell__hd weui-check__hd_in-checkbox">
+                  <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+                  <icon class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{item.checked}}"></icon>
+                </view>
+                <view class="weui-cell__bd">{{item}}</view>
+              </label>
+            </block>
+
+          </radio-group>
+        </view>
+      </block>
+    </form>
+  </view>
+
+  <view class="weui-footer">
+    <view class="weui-footer__links">
+      <navigator url="/pages/user/about/about" class="weui-footer__link">青春在线</navigator>
+      <navigator url="/pages/core/index/index" class="weui-footer__link">学生服务</navigator>
+    </view>
+    <view class="weui-footer__text">Copyright © 2017 youthol.cn</view>
+  </view>
+</view>

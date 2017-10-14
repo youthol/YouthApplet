@@ -1,0 +1,31 @@
+<view class="page">
+  <!-- hd -->
+  <view class="page__hd">
+    <view class="hd_bgcolor"></view>
+    <view class="hd_info">
+      <image class="info_avatar" src="{{wxInfo.avatarUrl || '/images/logo.jpg' }}"></image>
+      <view class="info_nickname">{{wxInfo.nickName || '青春在线' }}</view>
+      <view class="info_gobind" wx:if="{{isBind}}">
+        <navigator url="/pages/user/info/info">查看绑定</navigator>
+      </view>
+      <view class="info_gobind" wx:else>
+        <navigator url="/pages/user/bind/bind">前往绑定</navigator>
+      </view>
+    </view>
+  </view>
+  <!-- bd -->
+  <view class="page__bd">
+    <view class="weui-cells">
+      <block wx:for="{{lists}}" wx:key="{{item.index}}">
+        <navigator url="{{item.url}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__hd">
+            <image src="{{item.icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+          </view>
+          <view class="weui-cell__bd">{{item.title}}</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+      </block>
+
+    </view>
+  </view>
+</view>

@@ -1,0 +1,45 @@
+<view class="page">
+
+  <!--page head-->
+  <view class="page__hd">
+    <view class="core">
+      <block wx:for="{{cores}}" wx:key="{{item.name}}">
+        <navigator class="core-item" url="{{item.url}}">
+          <image class="core-item-icon" src="{{item.icon}}"></image>
+          <text class="core-item-name">{{item.name}}</text>
+        </navigator>
+      </block>
+    </view>
+  </view>
+
+  <!--page body-->
+  <view class="page__bd ">
+
+    <view class="swiper-container">
+      <swiper style="height:{{height - 100}}px" duration="500" bindchange="swiperChange">    
+        <block wx:for="{{quotes}}" wx:key="unique">
+          <swiper-item data-id="{{item.id}}">
+            <view class="onePic">
+              <image class="swp_img" src="{{item.imgUrl}}"></image>
+              <view class="swp_font">{{item.day}}</view>
+              <view class="swp_date">{{item.date}}</view>            
+            </view>
+            <view class="quote">
+              <view class="yinhao">“</view>
+              <view class="content">{{item.content}}</view>
+              <view class="author">{{item.author}}</view>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="dots">
+        <block wx:for="{{slider}}" wx:key="unique">
+          <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+        </block>
+      </view>
+    </view>
+
+
+    <!-- 每日一文 -->
+  </view>
+</view>

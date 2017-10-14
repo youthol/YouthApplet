@@ -1,0 +1,13 @@
+<view class="page">
+  <view class="page__bd">
+    <image class="logo" src="/images/logo.png" mode="widthFix"></image>
+    <view class="intro">青春在线 精彩无限</view>
+    <!--<view class="version">v {{version}}</view>-->
+  </view>
+  <view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__links">
+      <navigator url="/pages/user/about/about" class="weui-footer__link">青春在线</navigator>
+    </view>
+    <view class="weui-footer__text">Copyright © {{year}} youthol.cn</view>
+  </view>
+</view>

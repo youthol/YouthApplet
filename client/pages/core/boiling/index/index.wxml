@@ -1,0 +1,14 @@
+<view class="page">
+  <view class="page__bd">
+    <block wx:for="{{boils}}" wx:key="unique">
+      <view class="boiling" bindtap="readBoil">
+        <view class="centent">
+          <image class="centent-bg" src="{{item.picUrl}}"></image>
+          <view class="scroll-centent-bg-mark"></view>
+          <view class="centent-title">{{item.title}}</view>
+          <button class="centent-btn" hover-class="centent-btn-hover" data-eid="{{item.eid}}">快来看看吧！</button>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,51 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">四六级成绩查询</view>
+  </view>
+  <!-- 查询结果 -->
+  <view class="page__bd">
+    <view class="weui-form-preview">
+      <view class="weui-form-preview__bd">
+        <view class="weui-form-preview__item" wx:if="{{cet.name}}">
+          <view class="weui-form-preview__label">姓名</view>
+          <view class="weui-form-preview__value">{{cet.name}}</view>
+        </view>
+        <view class="weui-form-preview__item" wx:if="{{cet.school}}">
+          <view class="weui-form-preview__label">学校</view>
+          <view class="weui-form-preview__value">{{cet.school}}</view>
+        </view>
+        <view class="weui-form-preview__item" wx:if="{{cet.type}}">
+          <view class="weui-form-preview__label">考试类别</view>
+          <view class="weui-form-preview__value">{{cet.type}}</view>
+        </view>
+        <view class="weui-form-preview__item" wx:if="{{cet.number}}">
+          <view class="weui-form-preview__label">准考证号</view>
+          <view class="weui-form-preview__value">{{cet.number}}</view>
+        </view>
+        <view class="weui-form-preview__item" wx:if="{{cet.total}}">
+          <view class="weui-form-preview__label">总成绩</view>
+          <view class="weui-form-preview__value">{{cet.total}}</view>
+        </view>
+        <view class="weui-form-preview__item" wx:if="{{cet.listen}}">
+          <view class="weui-form-preview__label">听力部分</view>
+          <view class="weui-form-preview__value">{{cet.listen}}</view>
+        </view>
+        <view class="weui-form-preview__item" wx:if="{{cet.read}}">
+          <view class="weui-form-preview__label">阅读部分</view>
+          <view class="weui-form-preview__value">{{cet.read}}</view>
+        </view>
+        <view class="weui-form-preview__item" wx:if="{{cet.writing}}">
+          <view class="weui-form-preview__label">写作部分</view>
+          <view class="weui-form-preview__value">{{cet.writing}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-footer">
+    <view class="weui-footer__links">
+      <navigator url="/pages/user/about/about" class="weui-footer__link">青春在线</navigator>
+      <navigator url="/pages/core/index/index" class="weui-footer__link">学生服务</navigator>
+    </view>
+    <view class="weui-footer__text">Copyright © 2017 youthol.cn</view>
+  </view>
+</view>

@@ -1,0 +1,73 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">新生宿舍查询</view>
+  </view>
+  <!-- 查询结果 -->
+  <view class="page__bd">
+    <view class="weui-form-preview">
+      <block wx:for="{{dorm}}" wx:key="unique" wx:if="{{showMore || index == activeIndex}}">
+        <view class="weui-form-preview__bd">
+          <view class="weui-form-preview__item" wx:if="{{item.sdut_id}}">
+            <view class="weui-form-preview__label">学号</view>
+            <view class="weui-form-preview__value">{{item.sdut_id}}</view>
+          </view>
+          <view class="weui-form-preview__item" wx:if="{{item.sdut_name}}">
+            <view class="weui-form-preview__label">姓名</view>
+            <view class="weui-form-preview__value" style="font-weight:700;">{{item.sdut_name}}</view>
+          </view>
+          <view class="weui-form-preview__item" wx:if="{{item.gender}}">
+            <view class="weui-form-preview__label">性别</view>
+            <view class="weui-form-preview__value">{{item.gender}}</view>
+          </view>
+          <view class="weui-form-preview__item" wx:if="{{item.nation}}">
+            <view class="weui-form-preview__label">民族</view>
+            <view class="weui-form-preview__value">{{item.nation}}</view>
+          </view>
+          <view class="weui-form-preview__item" wx:if="{{item.class_name}}">
+            <view class="weui-form-preview__label">班级</view>
+            <view class="weui-form-preview__value">{{item.class_name}}</view>
+          </view>
+          <view class="weui-form-preview__item" wx:if="{{item.apartment}}">
+            <view class="weui-form-preview__label">公寓楼</view>
+            <view class="weui-form-preview__value">{{item.apartment}}</view>
+          </view>
+          <view class="weui-form-preview__item" wx:if="{{item.room}}">
+            <view class="weui-form-preview__label">房间号</view>
+            <view class="weui-form-preview__value">{{item.room}}</view>
+          </view>
+          <view class="weui-form-preview__item" wx:if="{{item.bed}}">
+            <view class="weui-form-preview__label">床号</view>
+            <view class="weui-form-preview__value">{{item.bed}}</view>
+          </view>
+        </view>
+        <view class="weui-form-preview__ft" wx:if="{{showMore}}">
+          <button class="weui-form-preview__btn weui-form-preview__btn_primary" data-index="{{index}}" hover-class="weui-form-preview__btn_active" bindtap="showMore">查看舍友</button>
+        </view>
+      </block>
+      <view style="padding: 20rpx 0;background:#f8f8f9;" wx:if="{{!showMore}}"></view>
+      <block wx:for="{{roommates}}" wx:key="unique" wx:if="{{roommates}}">
+        <view class="weui-form-preview__bd" style="border-bottom:1rpx solid #eee;">
+          <view class="weui-form-preview__item" wx:if="{{item.bed}}">
+            <view class="weui-form-preview__label">{{item.bed}}号床位</view>
+            <view class="weui-form-preview__value" style="font-weight:700;">{{item.sdut_name}}</view>
+          </view>
+          <view class="weui-form-preview__item" wx:if="{{item.class_name}}">
+            <view class="weui-form-preview__label">班级</view>
+            <view class="weui-form-preview__value">{{item.class_name}}</view>
+          </view>
+          <view class="weui-form-preview__item" wx:if="{{item.nation}}">
+            <view class="weui-form-preview__label">民族</view>
+            <view class="weui-form-preview__value">{{item.nation}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="weui-footer">
+    <view class="weui-footer__links">
+      <navigator url="/pages/user/about/about" class="weui-footer__link">青春在线</navigator>
+      <navigator url="/pages/core/index/index" class="weui-footer__link">学生服务</navigator>
+    </view>
+    <view class="weui-footer__text">Copyright © 2017 youthol.cn</view>
+  </view>
+</view>

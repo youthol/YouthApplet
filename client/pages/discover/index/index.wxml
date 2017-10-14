@@ -1,0 +1,15 @@
+<view class="page">
+  <view class="act_lists">
+    <block wx:for="{{boils}}" wx:key="unique">
+      <navigator url="/pages/core/boiling/detail/detail?eid={{item.eid}}">
+        <view class="act_item">
+          <image class="act_img" src="{{item.picUrl}}"></image>
+          <view class="act_info">
+            <view class="act_sign {{'toutiao'}}">沸点</view>
+            <view class="act_title">{{item.title}}</view>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+</view>
